@@ -43,6 +43,14 @@ export default function FoundationsPage() {
         established, does one side feel it is giving more than it receives, and are there
         specific issues that can&rsquo;t be resolved without escalation?
       </p>
+      <h3>Typical stakeholder categories</h3>
+      <p>
+        A useful checklist when building a stakeholder map, so no group gets forgotten: top
+        management, functional managers, the project team itself, suppliers/vendors/contractors,
+        staff and personnel, service and support functions, other project managers sharing
+        resources, regulatory agencies, the public and press, and the economic/financial,
+        social/cultural, and environmental/legal context the project sits in.
+      </p>
 
       <h2>
         Communications Management <Tag kind="carried" />
@@ -53,9 +61,10 @@ export default function FoundationsPage() {
       <h3>Mechanisms</h3>
       <ul>
         <li>
-          <strong>Documentation</strong> &mdash; process documents (plans, reports) that control
-          the work, and product documents (specifications, manuals) that describe what&rsquo;s
-          being built.
+          <strong>Documentation</strong> &mdash; <em>process documents</em> that control the work
+          itself (project management plan, test plans, progress and status reports), and{" "}
+          <em>product documents</em> that specify what&rsquo;s being built (requirements and
+          design specifications, user and installation guides, technical reports).
         </li>
         <li><strong>Presentations</strong> &mdash; for interactive clarification that a document alone can&rsquo;t provide.</li>
         <li><strong>Meetings</strong> &mdash; the primary forum for coordinating people who work independently.</li>
@@ -144,6 +153,16 @@ export default function FoundationsPage() {
         HR / Team Management <Tag kind="carried" />
       </h2>
       <p>Carried forward from CITPM Chapter 8 and COMIT Chapter 11.</p>
+      <h3>Three skills of an effective manager</h3>
+      <p>
+        <strong>People skills</strong> (empathy, listening, motivating, coaching) get a team to
+        want to deliver. <strong>Process skills</strong> (onboarding, running reviews,
+        performance evaluation, reassigning work as people transition in and out) get the team
+        organised. <strong>Technical skills</strong> matter, but a manager without deep technical
+        knowledge should focus on knowing the limits of their own knowledge &mdash; deciding what
+        expertise is needed, and knowing when and how to bring in and evaluate a technical
+        advisor.
+      </p>
       <ul>
         <li>
           <strong>Team lifecycle</strong> &mdash; forming, storming, norming, performing,

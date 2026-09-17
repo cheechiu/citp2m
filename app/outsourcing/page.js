@@ -119,15 +119,31 @@ export default function OutsourcingPage() {
         Service Quality, Cost &amp; Risk Management <Tag kind="carried" />
       </h2>
       <p>Condensed from COMIT Chapters 7 and 9&ndash;10.</p>
+      <h3>Service quality</h3>
       <ul>
-        <li>Track SLA performance against agreed metrics on a regular reporting cycle; escalate persistent non-conformance through a defined path before it becomes a dispute.</li>
-        <li>Run service changes through a structured change-management process: identify, assess feasibility and cost, negotiate, approve, implement, verify.</li>
+        <li>Track SLA performance &mdash; typical metrics: service availability, response time, resolution time, and customer satisfaction &mdash; against agreed targets on a regular reporting cycle.</li>
         <li>
-          Apply the same four-phase risk cycle as <a href="/foundations">Section 1</a> &mdash;
-          identify, assess, mitigate, monitor &mdash; specifically for provider dependence,
-          contractual ambiguity, and cost overrun risk.
+          On non-conformance: confirm it&rsquo;s valid (check the client side hasn&rsquo;t
+          contributed to it), give written notice, track the provider&rsquo;s corrective plan at
+          progress meetings, and escalate to the steering committee &mdash; including penalty
+          clauses if needed &mdash; only if the response stays inadequate.
         </li>
+        <li>Run service changes through a structured process: identify, assess feasibility and cost, negotiate, approve, implement, verify.</li>
       </ul>
+      <h3>Cost</h3>
+      <p>
+        The same estimating techniques as <a href="/project-management">Section 2</a> apply here
+        &mdash; expert judgment, cost-by-analogy, bottom-up, top-down, and model-based &mdash;
+        validated against budgetary quotations from prospective providers before the RFP is
+        finalised. Control cost through regular variance tracking against the baseline, plus a
+        change-management process for anything that would shift the contracted scope.
+      </p>
+      <h3>Risk</h3>
+      <p>
+        Apply the same four-phase cycle as <a href="/foundations">Section 1</a> &mdash;
+        identify, assess, mitigate, monitor &mdash; specifically for provider dependence,
+        contractual ambiguity, and cost overrun risk.
+      </p>
 
       <h2>
         Contract Migration &amp; Exit <Tag kind="carried" />

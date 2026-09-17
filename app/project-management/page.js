@@ -29,6 +29,15 @@ export default function ProjectManagementPage() {
         <li>A project/programme/portfolio management office where scale warrants one.</li>
         <li>A project management information system for automated tracking and reporting.</li>
       </ul>
+      <div className="callout">
+        <strong>Practical tips, carried verbatim in spirit</strong>
+        The ecosystem around a project makes or breaks it &mdash; influencing the factors within
+        your control matters as much as managing the work itself. Project, programme, and
+        portfolio management call for different skill sets and experience; don&rsquo;t assume
+        someone who is good at one is automatically good at another. Build the business case
+        jointly with the sponsor and stakeholders, not in isolation &mdash; it&rsquo;s what
+        secures real buy-in, not just a signature.
+      </div>
 
       <h2>
         Delivery Lifecycle Management <Tag kind="modernized" />
@@ -85,9 +94,13 @@ export default function ProjectManagementPage() {
       <ul>
         <li>Typical cost sources: software licensing, hardware, professional services (labour and subcontracts), training, contingency, and recurring maintenance.</li>
         <li>
-          Estimation technique choice matters less than having a proper WBS underneath it &mdash;
-          estimating without one is guesswork. Function-point/COCOMO-era model-based estimation
-          is retired as a primary method here; kept as historical reference only.
+          <strong>Estimating techniques</strong> &mdash; expert judgment (Delphi-style panels),
+          cost-by-analogy (scale from a similar past project), bottom-up (sum estimated effort
+          per WBS task), top-down (decompose an agreed total budget), and model-based estimation
+          (a parametric model driven by a sizing metric). Function-point/COCOMO-era model-based
+          estimation specifically is retired as a primary method here; kept as historical
+          reference only. Whichever technique, a proper WBS underneath it is what makes the
+          estimate credible &mdash; estimating without one is guesswork.
         </li>
         <li>Earned Value Management remains a useful single view combining scope, schedule, and cost performance.</li>
         <li>Structure payment milestones to be commensurate with delivery risk &mdash; over-deferring payment just gets priced into the vendor&rsquo;s rate.</li>
@@ -206,12 +219,19 @@ export default function ProjectManagementPage() {
       <h2>
         Sample Templates <Tag kind="carried" />
       </h2>
-      <p>
-        Carried forward from CITPM Appendix B, directly reusable: project management plan table
-        of contents; change register (change, priority, impact, owner, due date, status); issue
-        register; defect register; risk register (risk, category, impact, probability,
-        exposure, mitigation action, trigger, contingency, owner).
-      </p>
+      <p>Carried forward from CITPM Appendix B, directly reusable.</p>
+      <ul>
+        <li>
+          <strong>Project management plan</strong> &mdash; overview and charter; integration
+          approach; scope statement and work breakdown structure; time, cost, quality, human
+          resource, communications, and risk management plans; procurement management; and an
+          annex for the detailed schedule, costing, quality checklists, and registers.
+        </li>
+        <li><strong>Change register</strong> &mdash; change, priority, impact and proposed resolution, effort, responsible owner, due date, status.</li>
+        <li><strong>Issue register</strong> &mdash; issue, severity, proposed resolution, owner, due date, status.</li>
+        <li><strong>Defect register</strong> &mdash; defect, severity, impact and proposed resolution, effort, owner, due date, status.</li>
+        <li><strong>Risk register</strong> &mdash; risk area/context/consequences, category, impact, probability, exposure score, mitigation action, trigger for contingency, contingency action, owner, closure date.</li>
+      </ul>
     </article>
   );
 }
