@@ -11,8 +11,7 @@ export default function OutsourcingPage() {
         AI-vendor content neither legacy document could have anticipated.
       </p>
 
-      <h2>
-        Outsourcing Lifecycle <Tag kind="carried" />
+      <h2 id="outsourcing-lifecycle">Outsourcing Lifecycle <Tag kind="carried" />
       </h2>
       <p>
         Carried forward from COMIT Chapter 1, unchanged. Still the clearest lifecycle model
@@ -25,8 +24,7 @@ export default function OutsourcingPage() {
         <li><strong>Exit</strong> &mdash; contract migration and handover, whether to renewal, a new provider, or back in-house.</li>
       </ul>
 
-      <h2>
-        Planning, RFP &amp; Service Provider Selection <Tag kind="carried" />
+      <h2 id="planning-rfp-service-provider-selection">Planning, RFP &amp; Service Provider Selection <Tag kind="carried" />
       </h2>
       <p>Condensed from COMIT Chapters 2&ndash;3.</p>
       <h3>Before you write anything</h3>
@@ -48,8 +46,7 @@ export default function OutsourcingPage() {
         <li>Categorise requirements as mandatory, good-to-have, or optional before the RFP goes out, not after proposals come back.</li>
       </ul>
 
-      <h2>
-        Service Provider Evaluation &amp; Selection <Tag kind="carried" />
+      <h2 id="service-provider-evaluation-selection">Service Provider Evaluation &amp; Selection <Tag kind="carried" />
       </h2>
       <p>Condensed from COMIT Chapter 3.</p>
       <ul>
@@ -59,8 +56,7 @@ export default function OutsourcingPage() {
         <li>Document the evaluation and route it through a formal approval authority before signing &mdash; not an informal sign-off.</li>
       </ul>
 
-      <h2>
-        Contract Formation &amp; Negotiation <Tag kind="carried" />
+      <h2 id="contract-formation-negotiation">Contract Formation &amp; Negotiation <Tag kind="carried" />
       </h2>
       <p>Condensed from COMIT Chapter 4.</p>
       <h3>Contract types</h3>
@@ -84,8 +80,7 @@ export default function OutsourcingPage() {
         benchmarking clauses up front rather than after a dispute.
       </p>
 
-      <h2>
-        Transition, Governance &amp; Relationship Management <Tag kind="carried" />
+      <h2 id="transition-governance-relationship-management">Transition, Governance &amp; Relationship Management <Tag kind="carried" />
       </h2>
       <p>
         Condensed from COMIT Chapters 5&ndash;6 &mdash; arguably COMIT&rsquo;s strongest
@@ -115,8 +110,7 @@ export default function OutsourcingPage() {
         are there unresolved disagreements that need escalating rather than absorbing silently?
       </p>
 
-      <h2>
-        Service Quality, Cost &amp; Risk Management <Tag kind="carried" />
+      <h2 id="service-quality-cost-risk-management">Service Quality, Cost &amp; Risk Management <Tag kind="carried" />
       </h2>
       <p>Condensed from COMIT Chapters 7 and 9&ndash;10.</p>
       <h3>Service quality</h3>
@@ -145,8 +139,7 @@ export default function OutsourcingPage() {
         contractual ambiguity, and cost overrun risk.
       </p>
 
-      <h2>
-        Contract Migration &amp; Exit <Tag kind="carried" />
+      <h2 id="contract-migration-exit">Contract Migration &amp; Exit <Tag kind="carried" />
       </h2>
       <p>Condensed from COMIT Chapter 8.</p>
       <ul>
@@ -156,29 +149,69 @@ export default function OutsourcingPage() {
         <li>Confirm data and software rights before day one of the transition &mdash; not after the provider has already started deleting copies.</li>
       </ul>
 
-      <h2>
-        Cloud-Native Commercial Models <Tag kind="modernized" />
+      <h2 id="cloud-native-commercial-models">Cloud-Native Commercial Models <Tag kind="modernized" />
       </h2>
       <p>
         COMIT predates SaaS, IaaS, and PaaS-era commercial models entirely. Its fixed-price and
         time-and-materials framing is replaced here with consumption-based and hybrid commercial
-        models more typical of modern cloud and platform engagements &mdash; pay-for-usage
-        pricing, tiered service commitments, and multi-year committed-spend discounts alongside
-        the traditional models above.
-      </p>
-
-      <h2>
-        Managing AI Vendors &amp; AI Agents <Tag kind="new" />
-      </h2>
-      <p>
-        Net-new. No legacy content exists for this &mdash; it is the area needing the most
-        original research before this section can be considered complete. Topics to develop:
+        models, anchored on the <strong>FinOps Foundation</strong> framework &mdash; the
+        recognised standard for managing variable cloud spend.
       </p>
       <ul>
-        <li>Evaluating AI/ML vendors on model provenance, data handling, and update cadence, not just price and features.</li>
-        <li>Data and model risk as a distinct category in vendor due diligence.</li>
-        <li>SLAs for outcomes delivered wholly or partly by autonomous AI agents, where traditional uptime/response-time metrics may not apply.</li>
-        <li>Oversight mechanisms for AI agents acting as a delivery resource &mdash; who is accountable for an agent&rsquo;s output, and how that&rsquo;s audited.</li>
+        <li>Pay-for-usage pricing, tiered service commitments, and multi-year committed-spend discounts, alongside the traditional models above.</li>
+        <li>FinOps&rsquo; core principle for outsourcing purposes: finance, engineering, product, and the vendor should have shared, near-real-time visibility into spend &mdash; not a monthly invoice surprise.</li>
+        <li>The FinOps lifecycle &mdash; Inform (visibility), Optimize (efficiency), Operate (automate governance) &mdash; maps directly onto ongoing vendor cost management from <a href="#service-quality-cost-risk-management">Service Quality, Cost &amp; Risk Management</a> above.</li>
+        <li>As of 2026, FinOps practice is expanding beyond pure cost-cutting to cover governance, forecasting, and executive alignment &mdash; and applies as much to AI/API consumption spend as to infrastructure.</li>
+      </ul>
+
+      <h2 id="managing-ai-vendors-ai-agents">Managing AI Vendors &amp; AI Agents <Tag kind="new" />
+      </h2>
+      <p>
+        Net-new. No legacy content exists for this. Singapore now has a directly relevant
+        anchor, though: IMDA&rsquo;s <strong>Model AI Governance Framework for Agentic AI</strong>{" "}
+        (launched January 2026, updated May 2026) &mdash; see the full framework in{" "}
+        <a href="/foundations">Section 1</a>. Its May 2026 update specifically addressed
+        third-party and multi-agent systems, which is the part most relevant to vendor
+        management:
+      </p>
+      <ul>
+        <li>
+          <strong>Clarify roles across the value chain</strong> &mdash; the framework
+          distinguishes platform providers from system developers; know which one your vendor is
+          before assigning accountability for an agent&rsquo;s behaviour.
+        </li>
+        <li>
+          <strong>Treat multi-agent complexity as a risk factor in itself</strong> &mdash; the
+          more agents (yours and third-party) interacting in a workflow, the higher the
+          likelihood that something goes wrong, independent of any single agent&rsquo;s quality.
+        </li>
+        <li>
+          <strong>Watch for automation bias</strong> &mdash; monitor human override rates and
+          response times on agent output; a rubber-stamping reviewer defeats the point of human
+          accountability.
+        </li>
+        <li>
+          <strong>Require the framework&rsquo;s technical controls as contract terms</strong>{" "}
+          &mdash; access controls, guardrails, human-approval gates, and logging/monitoring are
+          now treated as core agent components, not optional extras; ask vendors to demonstrate
+          them, not just claim them.
+        </li>
+      </ul>
+      <h3>Vendor due diligence and SLAs</h3>
+      <ul>
+        <li>Evaluate AI/ML vendors on model provenance, data handling, and update cadence, not just price and features.</li>
+        <li>Treat data and model risk as a distinct due-diligence category, alongside the standard financial and technical checks in <a href="#service-provider-evaluation-selection">Service Provider Evaluation</a> above.</li>
+        <li>
+          For SLAs covering outcomes delivered wholly or partly by autonomous agents, traditional
+          uptime/response-time metrics are necessary but not sufficient &mdash; add metrics for
+          override rate, escalation rate, and action-scope compliance (did the agent stay within
+          its granted permissions).
+        </li>
+        <li>
+          Bound the agent&rsquo;s access and action scope in the contract itself, not just in
+          configuration &mdash; the framework treats this as the primary risk-reduction lever,
+          ahead of monitoring after the fact.
+        </li>
       </ul>
     </article>
   );

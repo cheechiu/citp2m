@@ -25,8 +25,7 @@ export default function ProductManagementPage() {
         of working (WoW) rather than following one prescribed process.
       </div>
 
-      <h2>
-        Guiding Principles <Tag kind="new" />
+      <h2 id="guiding-principles">Guiding Principles <Tag kind="new" />
       </h2>
       <p>
         Adapted from the Software Delivery Playbook&rsquo;s principles, reframed for product
@@ -40,8 +39,7 @@ export default function ProductManagementPage() {
         <li><strong>Continuous improvement</strong> &mdash; the product operating model itself is a product; revisit and improve it deliberately.</li>
       </ul>
 
-      <h2>
-        Planning &mdash; Discovery &amp; Prioritisation <Tag kind="new" />
+      <h2 id="planning-discovery-prioritisation">Planning &mdash; Discovery &amp; Prioritisation <Tag kind="new" />
       </h2>
       <p>GovTech&rsquo;s own terms for what other frameworks (Blume VC among them) call &ldquo;Discovery.&rdquo;</p>
       <ul>
@@ -51,8 +49,7 @@ export default function ProductManagementPage() {
         <li><strong>Prioritisation</strong> &mdash; rank by frequency and intensity of the problem, not by who asked loudest; sequence by MBI, the smallest increment that still proves business value.</li>
       </ul>
 
-      <h2>
-        Design <Tag kind="new" />
+      <h2 id="design">Design <Tag kind="new" />
       </h2>
       <p>
         Product&rsquo;s contribution to solutioning, cross-linked to{" "}
@@ -64,8 +61,7 @@ export default function ProductManagementPage() {
         <li><strong>Standardised design artefacts and Architecture Decision Records</strong> &mdash; so decisions survive team turnover.</li>
       </ul>
 
-      <h2>
-        Delivery &amp; Development <Tag kind="new" />
+      <h2 id="delivery-development">Delivery &amp; Development <Tag kind="new" />
       </h2>
       <p>
         Points to <Link href="/project-management">Section 2&rsquo;s Agile Delivery</Link>{" "}
@@ -83,8 +79,7 @@ export default function ProductManagementPage() {
         <li><strong>Continuous delivery and automated environment setup</strong> &mdash; releasing is a routine event, not a project.</li>
       </ul>
 
-      <h2>
-        Operation <Tag kind="new" />
+      <h2 id="operation">Operation <Tag kind="new" />
       </h2>
       <p>Product ownership doesn&rsquo;t end at ship.</p>
       <ul>
@@ -94,16 +89,14 @@ export default function ProductManagementPage() {
         <li><strong>Continuous operation improvement</strong> &mdash; production health is a product metric, not just an engineering one.</li>
       </ul>
 
-      <h2>
-        Reflection <Tag kind="new" />
+      <h2 id="reflection">Reflection <Tag kind="new" />
       </h2>
       <p>
         Retrospectives, applied at the product level &mdash; not just the sprint level. Ask
         whether the product bet paid off, not only whether the sprint delivered its stories.
       </p>
 
-      <h2>
-        Metrics &amp; Growth <Tag kind="new" />
+      <h2 id="metrics-growth">Metrics &amp; Growth <Tag kind="new" />
       </h2>
       <p>
         SVPG- and Blume VC-supplemented. This fills the gap GovTech&rsquo;s engineering-first
@@ -115,17 +108,46 @@ export default function ProductManagementPage() {
         <li>Product-led growth loops &mdash; where usage itself drives further acquisition.</li>
       </ul>
 
-      <h2>
-        Product Management in the AI Era <Tag kind="new" />
+      <h2 id="product-management-in-the-ai-era">Product Management in the AI Era <Tag kind="new" />
       </h2>
       <p>
         Building AI-native products, deciding where to invest in AI-driven features, and
         evaluating AI/ML vendor and model choices as product inputs &mdash; not purely
         engineering or procurement decisions.
       </p>
+      <h3>AI evals are now a core PM skill</h3>
+      <p>
+        An <strong>eval</strong> is a structured, repeatable test suite that measures an AI
+        feature&rsquo;s output against criteria the PM defines &mdash; not a QA afterthought.
+        Teams that run evals before launch report going from idea to validated feature in
+        3&ndash;7 days; teams that skip this and iterate through production complaints instead
+        report 8&ndash;14 weeks at roughly 10&times; the cost.
+      </p>
+      <ul>
+        <li>
+          An AI feature spec needs <strong>negative acceptance criteria</strong> &mdash; what the
+          model must <em>not</em> do &mdash; alongside the usual positive requirements.
+        </li>
+        <li>
+          Distinguish <strong>offline evaluation</strong> (testing against a fixed dataset before
+          release) from <strong>online evaluation</strong> (monitoring real production output),
+          and plan for both.
+        </li>
+        <li>
+          Maintain a risk register specifically for AI-feature failure modes &mdash;
+          hallucination and prompt injection are the two that most commonly slip past
+          conventional QA &mdash; and cross-reference it against the risk categories in{" "}
+          <Link href="/foundations">Section 1</Link>.
+        </li>
+        <li>
+          Where the feature involves an autonomous agent rather than a single AI response, apply{" "}
+          <Link href="/outsourcing">Section 4&rsquo;s AI vendor/agent governance content</Link>{" "}
+          even for in-house builds &mdash; the accountability questions don&rsquo;t go away just
+          because it wasn&rsquo;t outsourced.
+        </li>
+      </ul>
 
-      <h2>
-        Bridge to Project Management <Tag kind="new" />
+      <h2 id="bridge-to-project-management">Bridge to Project Management <Tag kind="new" />
       </h2>
       <p>
         Where product and project responsibilities overlap &mdash; roadmap versus delivery plan,

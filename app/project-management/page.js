@@ -11,8 +11,7 @@ export default function ProjectManagementPage() {
         candidates and holders on its own &mdash; no other section is required.
       </p>
 
-      <h2>
-        Ecosystem of Projects <Tag kind="carried" />
+      <h2 id="ecosystem-of-projects">Ecosystem of Projects <Tag kind="carried" />
       </h2>
       <p>
         Carried forward from CITPM Chapter 2. A <strong>project</strong> is the basic unit of
@@ -39,8 +38,7 @@ export default function ProjectManagementPage() {
         secures real buy-in, not just a signature.
       </div>
 
-      <h2>
-        Delivery Lifecycle Management <Tag kind="modernized" />
+      <h2 id="delivery-lifecycle-management">Delivery Lifecycle Management <Tag kind="modernized" />
       </h2>
       <p>
         Modernized from CITPM Chapter 3. The 2015 edition treated waterfall as the default
@@ -66,8 +64,7 @@ export default function ProjectManagementPage() {
         </tbody>
       </table>
 
-      <h2>
-        Scope, Time &amp; Cost Management <Tag kind="carried" />
+      <h2 id="scope-time-cost-management">Scope, Time &amp; Cost Management <Tag kind="carried" />
       </h2>
       <h3>Scope</h3>
       <ul>
@@ -106,8 +103,7 @@ export default function ProjectManagementPage() {
         <li>Structure payment milestones to be commensurate with delivery risk &mdash; over-deferring payment just gets priced into the vendor&rsquo;s rate.</li>
       </ul>
 
-      <h2>
-        Quality Management <Tag kind="modernized" />
+      <h2 id="quality-management">Quality Management <Tag kind="modernized" />
       </h2>
       <p>
         Modernized from CITPM Chapter 7. Product quality is a function of process quality: a
@@ -135,8 +131,7 @@ export default function ProjectManagementPage() {
         of &ldquo;which version is actually in production?&rdquo;
       </p>
 
-      <h2>
-        Risk &amp; Procurement <Tag kind="modernized" />
+      <h2 id="risk-procurement">Risk &amp; Procurement <Tag kind="modernized" />
       </h2>
       <p>
         Risk mechanics live in <Link href="/foundations">Section 1</Link>. Procurement spans
@@ -145,8 +140,7 @@ export default function ProjectManagementPage() {
         in <Link href="/outsourcing">Section 4</Link> rather than duplicated here.
       </p>
 
-      <h2>
-        Stakeholder, Programme &amp; Change Management <Tag kind="carried" />
+      <h2 id="stakeholder-programme-change-management">Stakeholder, Programme &amp; Change Management <Tag kind="carried" />
       </h2>
       <p>
         Stakeholder and change enablement mechanics are in{" "}
@@ -164,8 +158,7 @@ export default function ProjectManagementPage() {
         </li>
       </ul>
 
-      <h2>
-        Agile Delivery <Tag kind="modernized" />
+      <h2 id="agile-delivery">Agile Delivery <Tag kind="modernized" />
       </h2>
       <p>
         Modernized and promoted from CITPM&rsquo;s Appendix A into the main body, reflecting its
@@ -206,18 +199,32 @@ export default function ProjectManagementPage() {
         pays for itself quickly once releases are frequent.
       </p>
 
-      <h2>
-        AI in Project Delivery <Tag kind="new" />
+      <h2 id="ai-in-project-delivery">AI in Project Delivery <Tag kind="new" />
       </h2>
       <p>
         Net-new. AI now assists requirements analysis, estimation, and test generation directly
-        &mdash; and changes what traditional PM metrics mean. Velocity inflated by AI-assisted
-        output isn&rsquo;t the same signal it used to be; earned-value calculations need a
-        human-verification checkpoint before AI-assisted deliverables count as &ldquo;done.&rdquo;
+        &mdash; and changes what traditional PM metrics mean.
       </p>
+      <div className="callout">
+        <strong>The evidence is more mixed than the hype</strong>
+        A 2026 controlled study by METR had experienced open-source developers complete real
+        repository issues with and without AI assistance allowed. Developers took roughly 19%
+        <em>longer</em> with AI tools &mdash; and even after living through the slowdown, they
+        still believed AI had sped them up by about 20%. That gap between perceived and actual
+        productivity is the reason AI-inflated metrics need independent verification, not just
+        practitioner self-report. Separately, industry benchmarking in 2026 found AI-assisted
+        teams improving complexity-adjusted throughput (roughly 12 vs. 8 points/engineer/week),
+        but with the gains concentrated in lower-performing teams (up to ~50% faster) and much
+        smaller for already-strong teams (~10&ndash;15%) &mdash; and only about 1 in 5 teams
+        actually track AI impact with real engineering metrics rather than raw output volume.
+      </div>
+      <ul>
+        <li>Velocity inflated by AI-assisted output isn&rsquo;t the same signal it used to be &mdash; track value delivered, not lines or story points produced.</li>
+        <li>Earned-value calculations need a human-verification checkpoint before AI-assisted deliverables count as &ldquo;done.&rdquo;</li>
+        <li>Where a team is already strong, expect AI to help less than vendors claim; where a team is struggling, the gains are real and worth measuring properly.</li>
+      </ul>
 
-      <h2>
-        Sample Templates <Tag kind="carried" />
+      <h2 id="sample-templates">Sample Templates <Tag kind="carried" />
       </h2>
       <p>Carried forward from CITPM Appendix B, directly reusable.</p>
       <ul>

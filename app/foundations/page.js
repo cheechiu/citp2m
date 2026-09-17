@@ -10,8 +10,7 @@ export default function FoundationsPage() {
         Product, and Outsourcing work alike.
       </p>
 
-      <h2>
-        Stakeholder Management <Tag kind="carried" />
+      <h2 id="stakeholder-management">Stakeholder Management <Tag kind="carried" />
       </h2>
       <p>
         Carried forward from CITPM Chapter 12 and COMIT Chapter 6. A stakeholder is anyone who
@@ -52,8 +51,7 @@ export default function FoundationsPage() {
         social/cultural, and environmental/legal context the project sits in.
       </p>
 
-      <h2>
-        Communications Management <Tag kind="carried" />
+      <h2 id="communications-management">Communications Management <Tag kind="carried" />
       </h2>
       <p>
         Carried forward from CITPM Chapter 9 and COMIT Chapter 12, merged into one treatment.
@@ -82,8 +80,7 @@ export default function FoundationsPage() {
         <li>Handle confidential and personal data under applicable data protection law (e.g. Singapore&rsquo;s PDPA) in every channel, not just formal reports.</li>
       </ul>
 
-      <h2>
-        Risk Management <Tag kind="modernized" />
+      <h2 id="risk-management">Risk Management <Tag kind="modernized" />
       </h2>
       <p>
         Carried forward from CITPM Chapter 10 and COMIT Chapter 10, modernized. A risk is a
@@ -120,8 +117,7 @@ export default function FoundationsPage() {
         <li><strong>Hallucination in AI-assisted deliverables</strong> &mdash; plausible but incorrect content requiring a human verification step before sign-off.</li>
       </ul>
 
-      <h2>
-        Change Enablement <Tag kind="carried" />
+      <h2 id="change-enablement">Change Enablement <Tag kind="carried" />
       </h2>
       <p>
         Carried forward from CITPM Chapter 14, essentially unchanged &mdash; and backed by
@@ -149,8 +145,7 @@ export default function FoundationsPage() {
         <li><strong>Change readiness</strong> &mdash; assess with a readiness survey, not by assumption.</li>
       </ul>
 
-      <h2>
-        HR / Team Management <Tag kind="carried" />
+      <h2 id="hr-team-management">HR / Team Management <Tag kind="carried" />
       </h2>
       <p>Carried forward from CITPM Chapter 8 and COMIT Chapter 11.</p>
       <h3>Three skills of an effective manager</h3>
@@ -188,21 +183,53 @@ export default function FoundationsPage() {
         </li>
       </ul>
 
-      <h2>
-        Governance &amp; Ethics, incl. Responsible AI <Tag kind="new" />
+      <h2 id="governance-ethics-incl-responsible-ai">Governance &amp; Ethics, incl. Responsible AI <Tag kind="new" />
       </h2>
       <p>
-        Net-new. Neither legacy Body of Knowledge addresses data or AI governance. Baseline
-        expectations for practitioners:
+        Net-new. Neither legacy Body of Knowledge addresses data or AI governance &mdash; this
+        section anchors on frameworks that exist now and are directly relevant to a Singapore
+        practitioner.
       </p>
+      <div className="callout">
+        <strong>IMDA&rsquo;s Model AI Governance Framework for Agentic AI</strong>
+        Singapore&rsquo;s IMDA launched this in January 2026 (updated May 2026) &mdash; the first
+        governance framework built specifically for AI agents that plan, reason, and act
+        autonomously, not just generate text. Compliance is voluntary but organisations remain
+        legally accountable for what their agents do. It applies whether you build agents
+        in-house or deploy third-party ones, and rests on four dimensions:
+        <ul>
+          <li><strong>Assess and bound risks upfront</strong> &mdash; risk-assess by autonomy level, data access, and action scope; bound risk by design through tool permissions, access control, and limiting what an agent is allowed to act on.</li>
+          <li><strong>Make humans meaningfully accountable</strong> &mdash; clear responsibility across developers, deployers, operators, and end users, with real oversight mechanisms that can override, intercept, or review an agent&rsquo;s actions.</li>
+          <li><strong>Implement technical controls across the lifecycle</strong> &mdash; guardrails and least-privilege access at design time, comprehensive testing pre-deployment, and progressive rollout with real-time monitoring after.</li>
+          <li><strong>Enable end-user responsibility</strong> &mdash; transparency about what an agent can do, clear escalation channels, and training so users don&rsquo;t lose the oversight skills the framework assumes they have.</li>
+        </ul>
+        The May 2026 update added specific guidance for multi-agent systems and third-party
+        agent usage (relevant directly to <a href="/outsourcing">Section 4</a>), plus monitoring
+        human override rates as a safeguard against automation bias &mdash; people rubber-stamping
+        an agent&rsquo;s output instead of genuinely reviewing it.
+      </div>
+      <h3>Wider reference points</h3>
+      <ul>
+        <li>
+          <strong>NIST AI Risk Management Framework</strong> (US, voluntary) &mdash; four
+          functions: Govern (leadership and culture), Map (context and impact), Measure (test
+          against trustworthiness criteria), Manage (respond across the AI lifecycle). Useful as
+          a check-list even outside the US.
+        </li>
+        <li>
+          <strong>ISO/IEC 42001</strong> &mdash; the first international AI management system
+          standard, certifiable the way ISO 9001 or ISO/IEC 27001 are; useful if a client or
+          regulator wants third-party assurance rather than a self-declared policy.
+        </li>
+      </ul>
+      <h3>Baseline expectations for practitioners</h3>
       <ul>
         <li>Disclosure norms &mdash; when and how AI-assisted work should be flagged as such to reviewers and stakeholders.</li>
         <li>Data governance for AI &mdash; what data may be used to prompt or fine-tune AI tools, and what must never leave the organisation&rsquo;s boundary.</li>
         <li>Algorithmic accountability &mdash; who is answerable when an AI-influenced decision causes harm, and how that is documented and traced.</li>
       </ul>
 
-      <h2>
-        AI Fluency for Practitioners <Tag kind="new" />
+      <h2 id="ai-fluency-for-practitioners">AI Fluency for Practitioners <Tag kind="new" />
       </h2>
       <p>
         Net-new. A practitioner-level primer, not a technical how-to: using AI tools
@@ -210,6 +237,31 @@ export default function FoundationsPage() {
         generating test cases &mdash; while keeping a human accountable for every output that
         reaches a stakeholder or a production system.
       </p>
+      <p>
+        AI literacy is increasingly treated as baseline workforce infrastructure, not an optional
+        skill &mdash; several national workforce bodies published formal AI literacy frameworks
+        in early 2026, defining it as the knowledge and skills to understand what an AI system
+        does, recognise its limitations, and apply it responsibly in your own role. For a
+        practitioner, that breaks down into:
+      </p>
+      <ul>
+        <li>
+          <strong>A universal baseline</strong> &mdash; every practitioner should be able to
+          write a clear, well-scoped prompt (role, context, desired output, constraints) and
+          recognise when an AI output is confidently wrong rather than just terse.
+        </li>
+        <li>
+          <strong>Role-proportional depth</strong> &mdash; a project manager needs enough fluency
+          to sanity-check AI-assisted estimates and requirements; someone building AI features
+          needs to go further into evaluation and testing (see{" "}
+          <a href="/product-management">Section 3</a>).
+        </li>
+        <li>
+          <strong>A culture where questioning AI output is normal</strong> &mdash; the
+          organisations that adapt well are the ones where asking &ldquo;how do we know this is
+          right?&rdquo; is expected, not treated as slowing things down.
+        </li>
+      </ul>
     </article>
   );
 }
