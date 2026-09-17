@@ -1,0 +1,217 @@
+import Link from "next/link";
+import Tag from "../../components/Tag";
+
+export default function ProjectManagementPage() {
+  return (
+    <article className="prose">
+      <span className="eyebrow">Section 2 &middot; Full Pillar</span>
+      <h1>Project Management</h1>
+      <p className="lede">
+        Carries CITPM forward. Together with Section 1, this section fully serves CITPM
+        candidates and holders on its own &mdash; no other section is required.
+      </p>
+
+      <h2>
+        Ecosystem of Projects <Tag kind="carried" />
+      </h2>
+      <p>
+        Carried forward from CITPM Chapter 2. A <strong>project</strong> is the basic unit of
+        organising IT work. A <strong>programme</strong> coordinates two or more related
+        projects to obtain benefits no single project could deliver alone. A{" "}
+        <strong>portfolio</strong> groups projects and programmes &mdash; not necessarily related
+        &mdash; to realise strategic objectives. The distinction that matters day to day:
+        projects and programmes chase tactical goals, portfolios chase strategic ones.
+      </p>
+      <h3>Project governance</h3>
+      <ul>
+        <li>Governing processes &mdash; approval, escalation, and regular status review.</li>
+        <li>Governing bodies &mdash; project manager, project director, steering committee, senior management.</li>
+        <li>A project/programme/portfolio management office where scale warrants one.</li>
+        <li>A project management information system for automated tracking and reporting.</li>
+      </ul>
+
+      <h2>
+        Delivery Lifecycle Management <Tag kind="modernized" />
+      </h2>
+      <p>
+        Modernized from CITPM Chapter 3. The 2015 edition treated waterfall as the default
+        lifecycle and agile as an appendix. This playbook inverts that: agile and hybrid
+        delivery are the default, with plan-driven (waterfall) delivery retained as one option
+        among several, chosen deliberately rather than assumed.
+      </p>
+      <h3>Choosing a lifecycle &mdash; the factors that still matter</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th>Favours agile</th>
+            <th>Favours plan-driven</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>System type</td><td>High user interaction</td><td>Backend, data-driven</td></tr>
+          <tr><td>Team size</td><td>Small (&lt;10), co-located or tight-knit</td><td>Large or mega-scale</td></tr>
+          <tr><td>Requirements stability</td><td>Dynamic, expected to change</td><td>Well understood, stable</td></tr>
+          <tr><td>Customer involvement</td><td>High and continuous</td><td>Intense at defined stages only</td></tr>
+          <tr><td>Culture</td><td>Comfortable with empowerment</td><td>Comfortable with defined roles and procedures</td></tr>
+        </tbody>
+      </table>
+
+      <h2>
+        Scope, Time &amp; Cost Management <Tag kind="carried" />
+      </h2>
+      <h3>Scope</h3>
+      <ul>
+        <li>Specify functional <em>and</em> non-functional requirements &mdash; performance, availability, capacity, scalability, security, usability.</li>
+        <li>
+          <strong>MoSCoW</strong> to keep requirements honest: Must have (objective fails
+          without it), Should have (objective weakens without it), Could have (nice to have,
+          only if budget/time allow), Won&rsquo;t have (out of scope this round).
+        </li>
+        <li>Where using a packaged/COTS solution: &ldquo;vanilla is best&rdquo; &mdash; minimise customisation, and if the gap analysis shows major customisation is needed, reconsider the fit before committing.</li>
+        <li>Scope creep is one of the most common causes of delay &mdash; every change request gets a formal impact assessment and a re-baselined plan, not a quiet yes.</li>
+      </ul>
+      <h3>Time</h3>
+      <ul>
+        <li>Sequence activities from the work breakdown structure, noting dependencies (finish-to-start, start-to-start, finish-to-finish, start-to-finish).</li>
+        <li>Critical Path Method / PERT to find earliest/latest start and finish times, float, and the critical path itself.</li>
+        <li>
+          To compress a schedule: crashing (add resources), fast-tracking (run activities in
+          parallel), de-scoping, phasing into releases, or deliberately downgrading process rigour
+          &mdash; each trades cost, risk, or quality for time.
+        </li>
+      </ul>
+      <h3>Cost</h3>
+      <ul>
+        <li>Typical cost sources: software licensing, hardware, professional services (labour and subcontracts), training, contingency, and recurring maintenance.</li>
+        <li>
+          Estimation technique choice matters less than having a proper WBS underneath it &mdash;
+          estimating without one is guesswork. Function-point/COCOMO-era model-based estimation
+          is retired as a primary method here; kept as historical reference only.
+        </li>
+        <li>Earned Value Management remains a useful single view combining scope, schedule, and cost performance.</li>
+        <li>Structure payment milestones to be commensurate with delivery risk &mdash; over-deferring payment just gets priced into the vendor&rsquo;s rate.</li>
+      </ul>
+
+      <h2>
+        Quality Management <Tag kind="modernized" />
+      </h2>
+      <p>
+        Modernized from CITPM Chapter 7. Product quality is a function of process quality: a
+        good product needs a good process behind it, built from contract review, requirements
+        control, design control, development control, verification &amp; validation, and
+        management control. Replace the 2015 edition&rsquo;s ISO 9001:2008/CMMI-only framing
+        with current QMS references; the underlying discipline is unchanged.
+      </p>
+      <h3>Quality control techniques</h3>
+      <ul>
+        <li><strong>Reviews</strong> &mdash; inspections (formal, rigorous), walkthroughs (find defects and alternatives), desk checks (informal, individual).</li>
+        <li>
+          <strong>Testing</strong> &mdash; unit, integration, system (functional and
+          non-functional: recovery, security, load/performance, usability), independent testing
+          for mission-critical work, user acceptance testing, operational readiness testing, and
+          regression testing whenever something changes.
+        </li>
+        <li>Testing process discipline: plan &rarr; design &rarr; execute &rarr; follow up defects &rarr; monitor &amp; control &rarr; analyse results &rarr; close, with test cases banked in a reuse repository.</li>
+      </ul>
+      <h3>System configuration management</h3>
+      <p>
+        Configuration identification (unique IDs and traceability), change control (a change
+        control board for baselined items), status accounting (what&rsquo;s changed, what
+        remains), and configuration auditing &mdash; poor discipline here is the classic cause
+        of &ldquo;which version is actually in production?&rdquo;
+      </p>
+
+      <h2>
+        Risk &amp; Procurement <Tag kind="modernized" />
+      </h2>
+      <p>
+        Risk mechanics live in <Link href="/foundations">Section 1</Link>. Procurement spans
+        outsourcing and subcontracting, software licensing, packaged solutions, turnkey
+        solutions, and infrastructure (increasingly cloud SaaS/IaaS/PaaS) &mdash; full treatment
+        in <Link href="/outsourcing">Section 4</Link> rather than duplicated here.
+      </p>
+
+      <h2>
+        Stakeholder, Programme &amp; Change Management <Tag kind="carried" />
+      </h2>
+      <p>
+        Stakeholder and change enablement mechanics are in{" "}
+        <Link href="/foundations">Section 1</Link>. For managing multiple related projects as a
+        programme (CITPM Chapter 13):
+      </p>
+      <ul>
+        <li>Success depends on a single accountable director, active stakeholder management, a clear vision of the change, and enough skilled people to run it.</li>
+        <li>Governance needs three layers: programme sponsorship (senior executive commitment), programme management (director + manager), and programme support (tracking, documentation).</li>
+        <li>Planning covers benefits management, stakeholder management, issue/risk management, quality management, configuration management, and audit.</li>
+        <li>
+          For programmes needing external co-investment, consider cost sharing, revenue sharing,
+          joint ventures, or government innovation grants alongside straightforward client
+          funding.
+        </li>
+      </ul>
+
+      <h2>
+        Agile Delivery <Tag kind="modernized" />
+      </h2>
+      <p>
+        Modernized and promoted from CITPM&rsquo;s Appendix A into the main body, reflecting its
+        status as the default delivery approach rather than a supplement.
+      </p>
+      <h3>Foundations</h3>
+      <ul>
+        <li>
+          Four values: individuals and interactions over processes and tools; working software
+          over comprehensive documentation; customer collaboration over contract negotiation;
+          responding to change over following a plan.
+        </li>
+        <li>Twelve principles, grouped: customer value (early, continuous delivery), teamwork (co-location, empowerment, face-to-face communication), execution (sustainable pace, technical excellence, simplicity), and team improvement (self-organisation, regular retrospection).</li>
+      </ul>
+      <h3>How it differs operationally from waterfall</h3>
+      <ul>
+        <li>Payment tied to working software releases, not phase-completion documents.</li>
+        <li>A series of releases, each a few short iterations, rather than one big-bang release.</li>
+        <li>Scope managed through a prioritised, evolving backlog rather than a baselined requirements document behind a change-control gate.</li>
+      </ul>
+      <h3>Requirements formats</h3>
+      <p>User stories (&ldquo;As a &lt;role&gt;, I want &lt;goal&gt; so that &lt;benefit&gt;&rdquo;), user scenarios, use cases, and user flow diagrams &mdash; pick the lightest format that keeps the team and the customer aligned.</p>
+      <h3>Prioritisation</h3>
+      <p>Top-down ranking by value/effort/risk, MoSCoW, participatory techniques like &ldquo;buy a feature,&rdquo; Kano analysis (basic needs vs. delighters), and straight financial prioritisation (NPV, payback period).</p>
+      <h3>Tracking progress</h3>
+      <p>
+        Burn-down charts (product-level and iteration-level) show what&rsquo;s <em>left</em>,
+        not effort already spent &mdash; a deliberate contrast to earned value&rsquo;s
+        backward-looking view. Velocity tracks a team&rsquo;s sustainable throughput, but reading
+        it as a performance score rather than a planning input is a common and costly mistake.
+      </p>
+      <h3>What changes for the project manager</h3>
+      <p>
+        Active customer participation is non-negotiable; test/integration environments need to
+        exist from day one, not late in the schedule; leadership shifts from directive to
+        servant/adaptive; team stability matters more than in phase-gated delivery because tacit
+        knowledge isn&rsquo;t captured in handover documents; and investment in test automation
+        pays for itself quickly once releases are frequent.
+      </p>
+
+      <h2>
+        AI in Project Delivery <Tag kind="new" />
+      </h2>
+      <p>
+        Net-new. AI now assists requirements analysis, estimation, and test generation directly
+        &mdash; and changes what traditional PM metrics mean. Velocity inflated by AI-assisted
+        output isn&rsquo;t the same signal it used to be; earned-value calculations need a
+        human-verification checkpoint before AI-assisted deliverables count as &ldquo;done.&rdquo;
+      </p>
+
+      <h2>
+        Sample Templates <Tag kind="carried" />
+      </h2>
+      <p>
+        Carried forward from CITPM Appendix B, directly reusable: project management plan table
+        of contents; change register (change, priority, impact, owner, due date, status); issue
+        register; defect register; risk register (risk, category, impact, probability,
+        exposure, mitigation action, trigger, contingency, owner).
+      </p>
+    </article>
+  );
+}

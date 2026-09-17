@@ -1,0 +1,138 @@
+import Link from "next/link";
+import Tag from "../../components/Tag";
+
+export default function ProductManagementPage() {
+  return (
+    <article className="prose">
+      <span className="eyebrow">Section 3 &middot; Full Pillar &middot; The CITP2M Differentiator</span>
+      <h1>Product Management</h1>
+      <p className="lede">
+        Net-new domain. Primary sources: GovTech&rsquo;s Software Delivery Playbook (its
+        Principles, and its Planning / Design / Development / Delivery / Operation / Reflection
+        practices) and PMI Disciplined Agile&rsquo;s Product Management process blade. SVPG and
+        Blume VC content is kept only where those sources are silent &mdash; chiefly post-launch
+        growth.
+      </p>
+
+      <div className="callout">
+        <strong>What PMI Disciplined Agile adds</strong>
+        Its Product Management process blade frames the discipline as continuous and
+        evolutionary: identifying and prioritising offerings against strategy, forming a vision
+        for each, understanding customer needs directly, and de-risking delivery through{" "}
+        <strong>MVPs</strong> (minimum viable products, for learning what to build) and{" "}
+        <strong>MBIs</strong> &mdash; minimum business increments, the smallest slice of an
+        offering that delivers measurable business value on its own. Teams choose their own way
+        of working (WoW) rather than following one prescribed process.
+      </div>
+
+      <h2>
+        Guiding Principles <Tag kind="new" />
+      </h2>
+      <p>
+        Adapted from the Software Delivery Playbook&rsquo;s principles, reframed for product
+        decision-making rather than engineering alone.
+      </p>
+      <ul>
+        <li><strong>Feedback loops</strong> &mdash; shorten the distance between a product decision and evidence of whether it worked.</li>
+        <li><strong>Shift left</strong> &mdash; validate problems and risks before they&rsquo;re expensive to change, not after launch.</li>
+        <li><strong>Pervasive automation</strong> &mdash; automate what can be automated so product judgement is spent on what can&rsquo;t.</li>
+        <li><strong>Everything as code</strong> &mdash; specifications, decisions, and configuration live in version control, not in slide decks that drift from reality.</li>
+        <li><strong>Continuous improvement</strong> &mdash; the product operating model itself is a product; revisit and improve it deliberately.</li>
+      </ul>
+
+      <h2>
+        Planning &mdash; Discovery &amp; Prioritisation <Tag kind="new" />
+      </h2>
+      <p>GovTech&rsquo;s own terms for what other frameworks (Blume VC among them) call &ldquo;Discovery.&rdquo;</p>
+      <ul>
+        <li><strong>Inception</strong> &mdash; align on the problem and its business case before committing to build; identify the MBI that proves it.</li>
+        <li><strong>User testing</strong> &mdash; primary and secondary research validated with real users, not assumed from a meeting room.</li>
+        <li><strong>User stories</strong> &mdash; the shared unit of requirement between product and engineering.</li>
+        <li><strong>Prioritisation</strong> &mdash; rank by frequency and intensity of the problem, not by who asked loudest; sequence by MBI, the smallest increment that still proves business value.</li>
+      </ul>
+
+      <h2>
+        Design <Tag kind="new" />
+      </h2>
+      <p>
+        Product&rsquo;s contribution to solutioning, cross-linked to{" "}
+        <Link href="/project-management">Section 2</Link> for the engineering-execution side.
+      </p>
+      <ul>
+        <li><strong>Domain-driven design</strong> &mdash; a shared language between product and engineering for the problem space.</li>
+        <li><strong>Evolutionary architecture</strong> &mdash; design for change, not for a fixed final state.</li>
+        <li><strong>Standardised design artefacts and Architecture Decision Records</strong> &mdash; so decisions survive team turnover.</li>
+      </ul>
+
+      <h2>
+        Delivery &amp; Development <Tag kind="new" />
+      </h2>
+      <p>
+        Points to <Link href="/project-management">Section 2&rsquo;s Agile Delivery</Link>{" "}
+        content for team practice; this is what the Software Delivery Playbook adds specifically
+        for engineering rigour.
+      </p>
+      <ul>
+        <li><strong>Automated testing</strong> &mdash; writing tests that actually catch regressions, test-driven development (TDD), behaviour-driven development (BDD).</li>
+        <li><strong>Refactoring and code quality</strong> &mdash; kept as ongoing discipline, not a special project.</li>
+        <li><strong>Building security in</strong> &mdash; addressed during development, not bolted on before release.</li>
+        <li><strong>Source code management and code review</strong> &mdash; every change reviewed before it merges.</li>
+        <li><strong>CI/CD and continuous integration</strong> &mdash; the default delivery pipeline.</li>
+        <li><strong>Performance testing and user acceptance testing</strong> &mdash; part of the pipeline, not a separate phase at the end.</li>
+        <li><strong>Defect management and a clear Definition of Done</strong> &mdash; so &ldquo;done&rdquo; means the same thing to everyone.</li>
+        <li><strong>Continuous delivery and automated environment setup</strong> &mdash; releasing is a routine event, not a project.</li>
+      </ul>
+
+      <h2>
+        Operation <Tag kind="new" />
+      </h2>
+      <p>Product ownership doesn&rsquo;t end at ship.</p>
+      <ul>
+        <li><strong>&ldquo;You build it, you run it&rdquo;</strong> &mdash; the team that ships a feature owns its production behaviour.</li>
+        <li><strong>Design applications for operations, and for observability</strong> from the start, not retrofitted after an incident.</li>
+        <li><strong>Automate operations and monitor continuously</strong>, feeding operational learning back into the roadmap.</li>
+        <li><strong>Continuous operation improvement</strong> &mdash; production health is a product metric, not just an engineering one.</li>
+      </ul>
+
+      <h2>
+        Reflection <Tag kind="new" />
+      </h2>
+      <p>
+        Retrospectives, applied at the product level &mdash; not just the sprint level. Ask
+        whether the product bet paid off, not only whether the sprint delivered its stories.
+      </p>
+
+      <h2>
+        Metrics &amp; Growth <Tag kind="new" />
+      </h2>
+      <p>
+        SVPG- and Blume VC-supplemented. This fills the gap GovTech&rsquo;s engineering-first
+        playbook leaves for consumer and B2B product contexts beyond government delivery.
+      </p>
+      <ul>
+        <li>A North Star metric that ties product activity to business outcome.</li>
+        <li>Retention and funnel analysis to find where users drop off.</li>
+        <li>Product-led growth loops &mdash; where usage itself drives further acquisition.</li>
+      </ul>
+
+      <h2>
+        Product Management in the AI Era <Tag kind="new" />
+      </h2>
+      <p>
+        Building AI-native products, deciding where to invest in AI-driven features, and
+        evaluating AI/ML vendor and model choices as product inputs &mdash; not purely
+        engineering or procurement decisions.
+      </p>
+
+      <h2>
+        Bridge to Project Management <Tag kind="new" />
+      </h2>
+      <p>
+        Where product and project responsibilities overlap &mdash; roadmap versus delivery plan,
+        product metrics versus project status, MBIs versus milestones &mdash; and where they
+        diverge. This is the connective tissue that justifies combining both into one
+        certification track.
+      </p>
+    </article>
+  );
+}
