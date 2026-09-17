@@ -66,30 +66,43 @@ export default function ProjectManagementPage() {
 
       <h2 id="scope-time-cost-management">Scope, Time &amp; Cost Management <Tag kind="carried" />
       </h2>
-      <h3>Scope</h3>
+      <p>Migrated in full from CITPM Chapters 4&ndash;6, not just condensed pointers.</p>
+      <h3>Scope &mdash; planning</h3>
       <ul>
-        <li>Specify functional <em>and</em> non-functional requirements &mdash; performance, availability, capacity, scalability, security, usability.</li>
+        <li>Specify functional <em>and</em> non-functional requirements &mdash; performance, availability, capacity, scalability, reliability, security, integrity, interfaces/dependencies, and usability.</li>
         <li>
           <strong>MoSCoW</strong> to keep requirements honest: Must have (objective fails
           without it), Should have (objective weakens without it), Could have (nice to have,
-          only if budget/time allow), Won&rsquo;t have (out of scope this round).
+          only if budget/time allow), Won&rsquo;t have (out of scope this round, or not within
+          the team&rsquo;s authority).
         </li>
+        <li>Define project objectives in terms of concrete deliverables: the end-product itself, requirements/analysis/design specifications, test planning and results, management planning and control documentation, and user/system documentation.</li>
+        <li>Build a Work Breakdown Structure to decompose those deliverables into activities, and assign roles and responsibilities against it &mdash; the WBS is the foundation every schedule and cost estimate is built on.</li>
+        <li>Establish a project organisation structure covering in-house teams, external suppliers/subcontractors, and interfaces to customer and senior management, with a Change Control Board or Project Steering Committee as the change-management backbone.</li>
         <li>Where using a packaged/COTS solution: &ldquo;vanilla is best&rdquo; &mdash; minimise customisation, and if the gap analysis shows major customisation is needed, reconsider the fit before committing.</li>
+      </ul>
+      <h3>Scope &mdash; execution and control</h3>
+      <ul>
+        <li>Task staff against the WBS with clear deliverables, standards, acceptance criteria, effort/cost budget, and timescale for each activity.</li>
+        <li>Monitor progress with written reports, effort-to-complete calculations, and earned value analysis; take schedule, quality, cost, and technical control action as trends emerge, not after they&rsquo;ve compounded.</li>
         <li>Scope creep is one of the most common causes of delay &mdash; every change request gets a formal impact assessment and a re-baselined plan, not a quiet yes.</li>
       </ul>
       <h3>Time</h3>
       <ul>
-        <li>Sequence activities from the work breakdown structure, noting dependencies (finish-to-start, start-to-start, finish-to-finish, start-to-finish).</li>
-        <li>Critical Path Method / PERT to find earliest/latest start and finish times, float, and the critical path itself.</li>
+        <li>Sequence activities from the WBS, noting dependencies (finish-to-start, start-to-start, finish-to-finish, start-to-finish) and any lead (successor starts before predecessor finishes) or lag (successor waits after predecessor finishes) between them.</li>
+        <li>Critical Path Method / PERT to find earliest/latest start and finish times, total float per activity, and the critical path &mdash; the sequence with zero float that sets the project&rsquo;s minimum duration.</li>
+        <li>Build the schedule as a Gantt chart, adjusted for holidays, leave, and resource availability &mdash; using resource levelling (cap usage at a defined level) or resource smoothing (minimise fluctuations) as needed.</li>
         <li>
           To compress a schedule: crashing (add resources), fast-tracking (run activities in
           parallel), de-scoping, phasing into releases, or deliberately downgrading process rigour
-          &mdash; each trades cost, risk, or quality for time.
+          &mdash; each trades cost, risk, or quality for time, so weigh the trade explicitly
+          rather than defaulting to crashing.
         </li>
+        <li>Watch for Parkinson&rsquo;s Law (work expands to fill the time available) when setting activity durations &mdash; over-padding every task is its own source of schedule risk.</li>
       </ul>
       <h3>Cost</h3>
       <ul>
-        <li>Typical cost sources: software licensing, hardware, professional services (labour and subcontracts), training, contingency, and recurring maintenance.</li>
+        <li>Typical cost sources: software licensing (including maintenance fees during development), hardware/infrastructure, professional services (labour and subcontracts), training, expenses, contingency, and recurring maintenance/hosting costs.</li>
         <li>
           <strong>Estimating techniques</strong> &mdash; expert judgment (Delphi-style panels),
           cost-by-analogy (scale from a similar past project), bottom-up (sum estimated effort
@@ -99,8 +112,16 @@ export default function ProjectManagementPage() {
           reference only. Whichever technique, a proper WBS underneath it is what makes the
           estimate credible &mdash; estimating without one is guesswork.
         </li>
-        <li>Earned Value Management remains a useful single view combining scope, schedule, and cost performance.</li>
-        <li>Structure payment milestones to be commensurate with delivery risk &mdash; over-deferring payment just gets priced into the vendor&rsquo;s rate.</li>
+        <li>Earned Value Management remains a useful single view combining scope, schedule, and cost performance; revisit early estimates as the project progresses and better information becomes available, rather than anchoring on the original number.</li>
+        <li>
+          <strong>Cash flow, not just budget</strong> &mdash; weigh outsourced vs. in-house,
+          buy vs. lease, and COTS vs. bespoke against total cost of ownership, not just upfront
+          capital cost; balance the cost of quality assurance against the project&rsquo;s actual
+          quality requirements (over-specified QA is its own cost problem); structure payment
+          milestones to be commensurate with delivery risk &mdash; over-deferring payment just
+          gets priced into the vendor&rsquo;s rate; and factor in withholding tax when procuring
+          overseas professional services.
+        </li>
       </ul>
 
       <h2 id="quality-management">Quality Management <Tag kind="modernized" />

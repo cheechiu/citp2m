@@ -108,7 +108,7 @@ export default function HomePage() {
         <Link href="/outsourcing" className="card">
           <span className="card-title">4. Outsourcing &amp; Vendor Management</span>
           <span className="card-desc">
-            Condensed from COMIT, extended to cloud and AI vendors/agents.
+            Standalone reference migrated from COMIT, extended to cloud and AI vendors/agents.
           </span>
         </Link>
       </div>
