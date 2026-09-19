@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Tag from "../../components/Tag";
 
 export default function FoundationsPage() {
@@ -221,6 +222,22 @@ export default function FoundationsPage() {
           standard, certifiable the way ISO 9001 or ISO/IEC 27001 are; useful if a client or
           regulator wants third-party assurance rather than a self-declared policy.
         </li>
+        <li>
+          <strong>GovTech&rsquo;s Agentic Risk &amp; Capability (ARC) Framework</strong> &mdash;
+          published through GovTech&rsquo;s Responsible AI Playbook, this gives teams a
+          structured way to identify hazards specific to agentic systems (multi-step tool use,
+          hidden dependencies, unexpected goal-seeking behaviour), evaluate an agent&rsquo;s
+          capability level, and apply safeguards proportionate to that level rather than a flat
+          checklist &mdash; a practical companion to IMDA&rsquo;s framework above when scoping a
+          project or product that involves an autonomous agent.
+        </li>
+        <li>
+          <strong>CSA&rsquo;s addendum on securing agentic AI systems</strong> &mdash; the Cyber
+          Security Agency of Singapore layered agent-specific cybersecurity controls (prompt-injection
+          resilience, data leakage, autonomy-related failure modes) onto the governance
+          frameworks above, alongside IMDA and the AI Verify Foundation&rsquo;s 2025 expansion of
+          the Global AI Assurance Sandbox to cover the same risk categories.
+        </li>
       </ul>
       <h3>Baseline expectations for practitioners</h3>
       <ul>
@@ -236,6 +253,28 @@ export default function FoundationsPage() {
         responsibly in delivery work &mdash; drafting requirements, supporting estimation,
         generating test cases &mdash; while keeping a human accountable for every output that
         reaches a stakeholder or a production system.
+      </p>
+      <h3>What makes AI genuinely &ldquo;agentic&rdquo;</h3>
+      <p>
+        Vendors now market almost anything AI-adjacent as an &ldquo;agent.&rdquo; A practitioner
+        needs a sharper test than the marketing copy. Five characteristics, taken together,
+        distinguish a genuinely agentic system from a generative-AI feature with a workflow
+        wrapped around it:
+      </p>
+      <ul>
+        <li><strong>Goal-directed</strong> &mdash; works toward an objective across multiple steps, not a single input-output exchange.</li>
+        <li><strong>Context-aware</strong> &mdash; continuously reads its environment (task state, system data, user signals) and updates its plan accordingly, rather than acting on one static prompt.</li>
+        <li><strong>Reasoning and planning</strong> &mdash; decides a sequence of actions to reach the goal, rather than producing one response and stopping.</li>
+        <li><strong>Adaptive</strong> &mdash; learns from feedback or outcomes and adjusts behaviour over time.</li>
+        <li><strong>Autonomous</strong> &mdash; initiates and carries out actions with limited step-by-step human instruction.</li>
+      </ul>
+      <p>
+        The fewer of these a system actually exhibits, the more its risk profile resembles
+        ordinary generative AI rather than an autonomous agent &mdash; which matters directly for
+        how it should be scoped, resourced, and governed in{" "}
+        <Link href="/project-management#ai-in-project-delivery">Project Management</Link>,{" "}
+        <Link href="/product-management#product-management-in-the-ai-era">Product Management</Link>,
+        and <Link href="/outsourcing#managing-ai-vendors-ai-agents">vendor management</Link> alike.
       </p>
       <p>
         AI literacy is increasingly treated as baseline workforce infrastructure, not an optional

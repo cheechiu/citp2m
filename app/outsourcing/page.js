@@ -437,7 +437,13 @@ export default function OutsourcingPage() {
         (launched January 2026, updated May 2026) &mdash; see the full framework in{" "}
         <a href="/foundations">Section 1</a>. Its May 2026 update specifically addressed
         third-party and multi-agent systems, which is the part most relevant to vendor
-        management:
+        management. Two companion references, also in{" "}
+        <a href="/foundations#governance-ethics-incl-responsible-ai">Section 1</a>, are worth
+        pulling into the vendor contract itself: GovTech&rsquo;s <strong>ARC Framework</strong>,
+        for evaluating a vendor&rsquo;s agent against hazards proportionate to its autonomy level
+        before signing, and CSA&rsquo;s addendum on securing agentic AI systems, for the
+        cybersecurity controls (prompt-injection resilience, data leakage) a vendor should be
+        contractually required to demonstrate.
       </p>
       <ul>
         <li>

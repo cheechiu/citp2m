@@ -244,6 +244,34 @@ export default function ProjectManagementPage() {
         <li>Earned-value calculations need a human-verification checkpoint before AI-assisted deliverables count as &ldquo;done.&rdquo;</li>
         <li>Where a team is already strong, expect AI to help less than vendors claim; where a team is struggling, the gains are real and worth measuring properly.</li>
       </ul>
+      <h3>When the project scope includes an AI agent, not just an AI-assisted team</h3>
+      <p>
+        Increasingly the deliverable itself &mdash; not just the tooling used to build it &mdash;
+        is an autonomous agent. Use{" "}
+        <Link href="/foundations#ai-fluency-for-practitioners">the five agentic-AI characteristics</Link>{" "}
+        in Section 1 to check how genuinely agentic the deliverable actually is before sizing risk
+        around it: a system that&rsquo;s mostly a scripted workflow with an LLM call in it carries
+        very different risk from one that plans, acts, and adapts with limited supervision.
+      </p>
+      <ul>
+        <li>
+          Scope and risk-assess proportionate to autonomy level, not by treating every
+          &ldquo;AI agent&rdquo; line item the same way &mdash; GovTech&rsquo;s{" "}
+          <Link href="/foundations#governance-ethics-incl-responsible-ai">ARC Framework</Link>{" "}
+          gives a structured way to do this during planning, not after a failure.
+        </li>
+        <li>
+          Add a risk category to the register specifically for agentic failure modes: multi-step
+          tool use going wrong, hidden dependencies between chained actions, and goal-seeking
+          behaviour that technically satisfies the stated objective while missing the intent.
+        </li>
+        <li>
+          Bound the agent&rsquo;s access and action scope as an explicit acceptance criterion in
+          the project plan, and require human-approval gates and logging for any action outside a
+          pre-agreed low-risk set &mdash; treat these as deliverables the project must produce, not
+          just operational configuration to sort out later.
+        </li>
+      </ul>
 
       <h2 id="sample-templates">Sample Templates <Tag kind="carried" />
       </h2>

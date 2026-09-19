@@ -115,6 +115,22 @@ export default function ProductManagementPage() {
         evaluating AI/ML vendor and model choices as product inputs &mdash; not purely
         engineering or procurement decisions.
       </p>
+      <h3>Scoping &ldquo;agentic&rdquo; features honestly</h3>
+      <p>
+        Adoption pressure is real: industry estimates put a large and growing share of
+        business-to-business purchasing as AI-agent-facilitated, and most business leaders surveyed
+        in 2025 said they planned to deploy AI agents within 12&ndash;18 months. That pressure makes
+        it tempting to label any AI feature &ldquo;agentic&rdquo; in a roadmap deck. Before writing
+        the spec, check the feature against{" "}
+        <Link href="/foundations#ai-fluency-for-practitioners">
+          the five characteristics in Section 1
+        </Link>{" "}
+        &mdash; goal-directed, context-aware, reasoning/planning, adaptive, autonomous. A feature
+        that&rsquo;s genuinely agentic needs materially more eval coverage, a bounded action scope,
+        and human-approval gates; a feature that&rsquo;s really a single-shot generative call
+        wearing agentic branding doesn&rsquo;t, and over-specifying it wastes engineering effort
+        that should go toward real risk.
+      </p>
       <h3>AI evals are now a core PM skill</h3>
       <p>
         An <strong>eval</strong> is a structured, repeatable test suite that measures an AI
@@ -144,6 +160,15 @@ export default function ProductManagementPage() {
           <Link href="/outsourcing">Section 4&rsquo;s AI vendor/agent governance content</Link>{" "}
           even for in-house builds &mdash; the accountability questions don&rsquo;t go away just
           because it wasn&rsquo;t outsourced.
+        </li>
+        <li>
+          For agent-based features specifically, size evals and monitoring to autonomy level using{" "}
+          <Link href="/foundations#governance-ethics-incl-responsible-ai">
+            GovTech&rsquo;s ARC Framework and IMDA&rsquo;s Model AI Governance Framework for
+            Agentic AI
+          </Link>{" "}
+          &mdash; a chat assistant that drafts a reply for review needs far less scrutiny than one
+          that sends the reply itself.
         </li>
       </ul>
 

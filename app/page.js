@@ -83,6 +83,10 @@ export default function HomePage() {
       <ul>
         <li>CITPM Body of Knowledge, 4th Edition (SCS, 2015) &mdash; rights held by SCS.</li>
         <li>COMIT Body of Knowledge, 1st Edition (SCS, 2008) &mdash; rights held by SCS.</li>
+        <li>
+          SCS Agentic AI Body of Knowledge, &ldquo;Foundations of Agentic AI&rdquo; chapter (2026)
+          &mdash; rights held by SCS.
+        </li>
         <li>GovTech Singapore, Agile Playbook and Software Delivery Playbook.</li>
         <li>PMI Disciplined Agile, product management process.</li>
         <li>SVPG and Blume VC product management writing, used selectively for growth-stage content.</li>
